@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <section>
+            @using (Html.BeginForm("Register", "Home"))
+            {
+                <input type="text" name="firstname" placeholder="FirstName"/> <br />
+                <input type="text" name="lastname" placeholder="LastName"/><br />
+                <input type="text" name="address" placeholder="address" /> <br />
+                <input type="text" name="gender" placeholder="gender" /><br />
+                <input type="text" name="city" placeholder="city" /> <br />
+                <input type="text" name="pincode" placeholder="pincode" /> <br />
+                <br />
+                <input type="submit" value="Submit"/>
+
+            }
+
+        </section>
+    </div>
+</body>
+</html>
